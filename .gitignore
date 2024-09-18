@@ -1,0 +1,9 @@
+
+static/
+
+# Ignore Python cache files
+**/__pycache__/
+**/migrations/
+
+# Ignore SQLite database
+db.sqlite3

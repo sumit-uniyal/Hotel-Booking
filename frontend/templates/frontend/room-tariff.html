@@ -1,0 +1,14 @@
+{% extends 'frontend/base.html' %}
+{% load static %}
+{% block body %}
+
+<div class="container">
+    <h2>Rooms & Tariff</h2>
+
+    <div class="row">
+      {% for room in room_type %}
+      <div class="col-sm-6 wowload fadeInUp"><div class="rooms"><img src="{% static 'images/photos/'%}{{ forloop.counter|add:7}}.jpg" class="img-responsive"><div class="info"><h3>{{ room.type }}</h3><p> Missed lovers way one vanity wishes nay but. Use shy seemed within twenty wished old few regret passed. Absolute one hastened mrs any sensible</p><a href="{% url 'room_detail' %}" class="btn btn-default">Check Details</a></div></div></div>
+      {% endfor %}
+    </div>
+</div>
+{% endblock %}
